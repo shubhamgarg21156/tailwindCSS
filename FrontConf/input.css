@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Other way to add font-family is to use tailwingconfig file */
+/* @layer base{
+    body{
+        font-family: 'Fira Sans',sans-serif;
+    }
+} */
+
+@layer base{
+    body{
+        background: linear-gradient(to bottom, white 0%, white 60% , theme(colors.violet.400) 60%, theme(colors.violet.400) 100%);
+    }
+    @media screen(lg){
+        body{
+            background: linear-gradient(to right, white 0%, white 60% , theme(colors.violet.400) 60%, theme(colors.violet.400) 100%);
+        }    
+    }
+}
